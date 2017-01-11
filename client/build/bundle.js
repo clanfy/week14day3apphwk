@@ -19843,10 +19843,10 @@
 	          'C7 Website '
 	        ),
 	        _react2.default.createElement(
-	          'ul',
-	          null,
+	          'nav',
+	          { className: 'nav' },
 	          _react2.default.createElement(
-	            'li',
+	            'button',
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
@@ -19855,7 +19855,7 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'li',
+	            'button',
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
@@ -19864,7 +19864,7 @@
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'li',
+	            'button',
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,

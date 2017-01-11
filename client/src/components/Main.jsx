@@ -12,11 +12,11 @@ class Main extends React.Component{
     return (
       <div>
       <h4>C7 Website </h4>
-         <ul>
-           <li><Link to='/home'>Home</Link></li>
-           <li><Link to='/about'>About</Link></li>
-           <li><Link to='/pricing'>Pricing</Link></li>
-         </ul>
+        <nav className='nav'>
+           <button><Link to='/home'>Home</Link></button>
+           <button><Link to='/about'>About</Link></button>
+           <button><Link to='/pricing'>Pricing</Link></button>
+         </nav>
          {this.props.children} 
       </div>
       )
