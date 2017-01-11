@@ -66,6 +66,10 @@
 	
 	var _Gryffindor2 = _interopRequireDefault(_Gryffindor);
 	
+	var _Hufflepuff = __webpack_require__(220);
+	
+	var _Hufflepuff2 = _interopRequireDefault(_Hufflepuff);
+	
 	var _reactRouter = __webpack_require__(164);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -80,7 +84,8 @@
 	      { path: '/', component: _Main2.default },
 	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	      _react2.default.createElement(_reactRouter.Route, { path: 'home', component: _Home2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: 'gryffindor', component: _Gryffindor2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: 'gryffindor', component: _Gryffindor2.default }),
+	      _react2.default.createElement(_reactRouter.Route, { path: 'hufflepuff', component: _Hufflepuff2.default })
 	    )
 	  ), document.getElementById('app'));
 	};
@@ -19861,6 +19866,10 @@
 	
 	var _Gryffindor2 = _interopRequireDefault(_Gryffindor);
 	
+	var _Hufflepuff = __webpack_require__(220);
+	
+	var _Hufflepuff2 = _interopRequireDefault(_Hufflepuff);
+	
 	var _reactRouter = __webpack_require__(164);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -19910,6 +19919,15 @@
 	              _reactRouter.Link,
 	              { to: '/gryffindor' },
 	              'Gryffindor'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'button',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/hufflepuff' },
+	              'Hufflepuff'
 	            )
 	          )
 	        ),
@@ -24976,6 +24994,64 @@
 	  });
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Hufflepuff = function (_React$Component) {
+	  _inherits(Hufflepuff, _React$Component);
+	
+	  function Hufflepuff() {
+	    _classCallCheck(this, Hufflepuff);
+	
+	    return _possibleConstructorReturn(this, (Hufflepuff.__proto__ || Object.getPrototypeOf(Hufflepuff)).apply(this, arguments));
+	  }
+	
+	  _createClass(Hufflepuff, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'h4',
+	          null,
+	          ' Hufflepuff '
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          ' Hufflepuff characters '
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Hufflepuff;
+	}(_react2.default.Component);
+	
+	exports.default = Hufflepuff;
 
 /***/ }
 /******/ ]);
