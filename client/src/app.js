@@ -4,6 +4,7 @@ import Home from './components/Home.jsx';
 import Main from './components/Main.jsx';
 import Gryffindor from './components/Gryffindor.jsx';
 import Hufflepuff from './components/Hufflepuff.jsx';
+import Ravenclaw from './components/Ravenclaw.jsx';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 //nest some routes inside the router
@@ -15,6 +16,7 @@ window.onload = () => {
         <Route path="home" component={Home}/>
         <Route path="gryffindor" component={Gryffindor}/>
         <Route path="hufflepuff" component={Hufflepuff}/>
+        <Route path="ravenclaw" component={Ravenclaw}/>
       </Route>
     </Router>,
     document.getElementById('app')
